@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/*
+ * grunt-cssprettifierテスト用SCSS
+ * Ver.1.0
+ */
+p,
+ul{
+	margin-bottom: 1em;
+}
+
+.lyt-column{
+	@extend %clearfix;
+	.unit{
+		float: left;
+		margin-right: 20px;
+		&.last-unit{
+			margin-right: 0;
+		}
+	}
+}
+
+.lyt-image{
+	@extend %clearfix;
+}
+
+.box-01{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 300px;
+}
+
+.hdg-l1-01{
+	margin-bottom: 2em;
+	font-size: 2em;
+}
+
+%clearfix{
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@media print{
+
+	nav, .list-link-01{
+		display: none;
+	}
+
+	body{
+		background-color: #fff;
+	}
+
+}

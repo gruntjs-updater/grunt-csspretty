@@ -1,0 +1,47 @@
+{
+  "name": "grunt-csspretty",
+  "description": "CSS prettifier in your style.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/hideki-a/grunt-csspretty",
+  "author": {
+    "name": "Hideki Abe",
+    "email": "hideki.abe@anothersky.pw",
+    "url": "http://www.anothersky.pw/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hideki-a/grunt-csspretty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hideki-a/grunt-csspretty/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hideki-a/grunt-csspretty/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "postcss": "~0.3.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-autoprefixer": "~0.6.5"
+  }
+}
