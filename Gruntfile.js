@@ -78,6 +78,7 @@ module.exports = function(grunt) {
           selectors: 'separateline',
         },
         src: 'test/fixtures/sass.css',
+        dest: 'tmp/sass.css',
       },
       multi: {
         options: {
