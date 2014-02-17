@@ -77,9 +77,7 @@ module.exports = function(grunt) {
           },
           selectors: 'separateline',
         },
-        files: {
-          'tmp/sass.css': 'test/fixtures/sass.css',
-        },
+        src: 'test/fixtures/sass.css',
       },
       multi: {
         options: {
@@ -92,12 +90,10 @@ module.exports = function(grunt) {
             indent: '    ',
           },
         },
-        files: [{
-          expand: true,
-          cwd: 'test/fixtures',
-          src: '*.css',
-          dest: 'tmp/',
-        }]
+        expand: true,
+        cwd: 'test/fixtures',
+        src: '*.css',
+        dest: 'tmp',
       },
     },
 

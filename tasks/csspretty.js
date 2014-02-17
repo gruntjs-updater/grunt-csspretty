@@ -62,15 +62,15 @@ module.exports = function(grunt) {
       });
     }
 
-    function csspretty(src) {
+    function csspretty(src, dest) {
       var prettifier = makePrettifier();
-      return prettifier.process(src).css.trim();
+      var result = prettifier.process(src).css.trim();
+      grunt.file.write(dest, result);
     }
 
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
-      var dest = f.dest || f;      
-      var src = f.src.filter(function(filepath) {
+      var sources = f.src.filter(function(filepath) {
         // Warn on and remove invalid source files (if nonull was set).
         if (!grunt.file.exists(filepath)) {
           grunt.log.warn('Source file "' + filepath + '" not found.');
@@ -78,18 +78,17 @@ module.exports = function(grunt) {
         } else {
           return true;
         }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
       });
 
-      src = csspretty(src);
-
-      // Write the destination file.
-      grunt.file.write(dest, src);
-
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
+      sources.forEach(function(filepath) {
+        var dest = f.dest || filepath;
+        var src = grunt.file.read(filepath);
+        
+        csspretty(src, dest);
+        
+        // Print a success message.
+        grunt.log.writeln('File "' + dest + '" created.');
+      });
     });
   });
 
