@@ -108,6 +108,13 @@ The method of enumerating two or more selectors is specified.
         margin-bottom: 1em;
     }
 
+#### map
+
+Type: `Boolean`    
+Default: `false`
+
+Output source maps.
+
 ## Examples
 
 ### Example config
@@ -141,6 +148,7 @@ The method of enumerating two or more selectors is specified.
 
 ## Release History
 
+- 2014.02.19 v0.3.0 SourceMap support.
 - 2014.02.19 v0.2.1 Update dependences.
 - 2014.02.18 v0.2.0 Separeted processor creation logic([css-prettifier](https://github.com/hideki-a/css-prettifier)).
 - 2014.02.17 v0.1.1 Correction dependences.

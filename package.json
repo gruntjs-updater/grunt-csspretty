@@ -1,7 +1,7 @@
 {
   "name": "grunt-csspretty",
   "description": "CSS prettifier in your style.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "https://github.com/hideki-a/grunt-csspretty",
   "author": {
     "name": "Hideki Abe",
