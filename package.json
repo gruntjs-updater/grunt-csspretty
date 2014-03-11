@@ -42,6 +42,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "css-prettifier": "~0.1.3"
+    "css-prettifier": "~0.1.4"
   }
 }
