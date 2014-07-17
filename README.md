@@ -3,7 +3,7 @@
 > CSS prettifier in your style.
 
 ## Getting Started
-This plugin requires Grunt `~0.4.2`
+This plugin requires Grunt `~0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -148,6 +148,8 @@ Output source maps.
 
 ## Release History
 
+- 2014.07.17 v0.3.1 Update dependences.
+- 2014.02.19 v0.3.1 Update dependences.
 - 2014.02.19 v0.3.0 SourceMap support.
 - 2014.02.19 v0.2.1 Update dependences.
 - 2014.02.18 v0.2.0 Separeted processor creation logic([css-prettifier](https://github.com/hideki-a/css-prettifier)).
