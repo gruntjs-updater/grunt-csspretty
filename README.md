@@ -148,7 +148,8 @@ Output source maps.
 
 ## Release History
 
-- 2014.07.17 v0.3.1 Update dependences.
+- 2014.07.18 v0.3.3 Correction peerDependences.
+- 2014.07.17 v0.3.2 Update dependences.
 - 2014.02.19 v0.3.1 Update dependences.
 - 2014.02.19 v0.3.0 SourceMap support.
 - 2014.02.19 v0.2.1 Update dependences.
